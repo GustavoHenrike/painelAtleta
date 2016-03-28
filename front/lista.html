@@ -1,0 +1,40 @@
+
+
+</br>
+<h1>Lista De Atletas</h1>
+<div ng-init="listar()">
+<div class="col-md-3" ng-repeat="atleta in atletas">
+<div class="box box-info" >
+	<div class="box-header"><h4 class="box-tittle">{{atleta.name}}</h4></div>
+	<div class="box-body">
+			<table class="table table-striped">
+					<thead>
+					<tr>
+						<td><strong>Codigo</strong></td>
+						
+						<td><strong>idade</strong></td>
+						<td><strong>cpf</strong></td>
+						<td><strong>Ação</strong></td>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>{{atleta.codigoAtleta}}</td>
+							
+							<td>{{atleta.idade}}</td>
+							<td>{{atleta.cpf}}</td>
+							<td><a type="button" ng-click="apagar(atleta)"><i class="ion-trash-a"></span></i>
+							<a href="#/cadastrar" type="button" ng-click="selecionar(atleta)"><i class="ion-edit"></i></a></td>
+						</tr>
+					</tbody>
+				</table>	
+			</div>	
+	</div>
+
+</div>
+</div>
+
+
+
+
+
